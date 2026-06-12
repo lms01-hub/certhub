@@ -19,7 +19,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
         $user = mysqli_fetch_assoc($result);
 
         $_SESSION['nickname'] = $user['nickname'];
-
+        $_SESSION['point'] = $user['point'];
         header("Location: home.php");
         exit;
     }
