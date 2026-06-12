@@ -36,13 +36,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <form method="post">
         <label>이메일</label>
-        <input type="email" name="email">
+        <input type="email" name="email" required>
 
         <label>닉네임</label>
         <input type="text" name="nickname">
 
         <label>비밀번호</label>
-        <input type="password" name="password">
+        <input type="password" name="password" required>
 
         <button type="submit">회원가입</button>
     </form>
